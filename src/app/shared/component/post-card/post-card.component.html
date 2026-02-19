@@ -1,0 +1,18 @@
+
+
+<mat-card class="card h-100">
+    <mat-card-title  class="d-flex justify-content-between">
+        {{postObj.title}}
+       <span class="badge badge-warning">{{postObj.userId}}</span>  
+    </mat-card-title>
+    <mat-divider inset></mat-divider>
+    <mat-card-content>
+       {{postObj.Body}}
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-footer class="d-flex justify-content-between m-3">
+     <button mat-mini-fab color="primary" (click)="onEdit(postObj)"><mat-icon>edit</mat-icon></button>
+     <button mat-mini-fab color="warn"  (click)="onRemove()"><mat-icon>delete</mat-icon></button>
+    </mat-card-footer>
+</mat-card>
+
